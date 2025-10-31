@@ -1,0 +1,50 @@
+# === Build directories ===
+/build/
+/cmake-build-*/
+/out/
+/bin/
+/lib/
+/obj/
+
+# === CMake generated files ===
+CMakeFiles/
+CMakeCache.txt
+CTestTestfile.cmake
+cmake_install.cmake
+Makefile
+compile_commands.json
+Testing/
+*.cmake
+install_manifest.txt
+
+# === Editor / IDE files ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# === System files ===
+.DS_Store
+Thumbs.db
+
+# === Temporary / log files ===
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# === Executables and test binaries ===
+/gwatch
+/tests/testprog
+/tests/gwatch_tests
+/gwatch_tests
+/testprog
+*.out
+*.exe
+
+
+# === User-specific ===
+*.user
+*.env
+*.local
