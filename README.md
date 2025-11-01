@@ -37,3 +37,7 @@ cd global_variable_watcher
 ```bash
   ./run_tests.sh
 ```
+
+## License 
+
+This project is released under the MIT License.
