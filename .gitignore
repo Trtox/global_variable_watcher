@@ -6,7 +6,7 @@
 /lib/
 /obj/
 
-# === CMake generated files ===
+# === CMake files ===
 CMakeFiles/
 CMakeCache.txt
 CTestTestfile.cmake
@@ -17,11 +17,9 @@ Testing/
 *.cmake
 install_manifest.txt
 
-# === Editor / IDE files ===
+# === IDE files ===
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
 
 # === System files ===
 .DS_Store
@@ -39,7 +37,7 @@ Thumbs.db
 /tests/testprog
 /tests/gwatch_tests
 /gwatch_tests
-/testprog
+/build/testprog
 *.out
 *.exe
 

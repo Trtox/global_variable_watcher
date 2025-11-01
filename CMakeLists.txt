@@ -5,6 +5,8 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
 # -----------------------------------------------------------------------------
 # Main executable
 # -----------------------------------------------------------------------------
@@ -37,11 +39,34 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 add_executable(gwatch_tests
-        tests/test_elf_utils.cpp
+        tests/unit/test_elf_utils.cpp
         src/memory_utils.cpp
         src/elf_utils.cpp
+        src/debugger.cpp
+        tests/unit/test_memory_utils.cpp
+        tests/unit/test_debugger_utils.cpp
+        tests/integration/test_integration_gwatch.cpp
 )
 
-target_include_directories(gwatch_tests PRIVATE src)
+target_include_directories(gwatch_tests PRIVATE src ${CMAKE_SOURCE_DIR}/include)
 target_link_libraries(gwatch_tests PRIVATE gtest_main)
+
 add_test(NAME ELFUtilsTests COMMAND gwatch_tests)
+add_test(NAME MemoryUtilsTests COMMAND gwatch_tests)
+add_test(NAME DebuggerUtilsTests COMMAND gwatch_tests)
+
+# -----------------------------------------------------------------------------
+# Integration test target program
+# -----------------------------------------------------------------------------
+add_executable(testprog tests/integration/testprog.cpp)
+
+# -----------------------------------------------------------------------------
+# Integration test
+# -----------------------------------------------------------------------------
+add_executable(gwatch_integration_tests
+        tests/integration/test_integration_gwatch.cpp
+)
+target_link_libraries(gwatch_integration_tests PRIVATE gtest_main)
+target_include_directories(gwatch_integration_tests PRIVATE src)
+
+add_test(NAME IntegrationTests COMMAND gwatch_integration_tests)

@@ -1,4 +1,4 @@
-#include "../include/args.hpp"
+#include "args.hpp"
 
 #include <cstring>
 #include <iostream>

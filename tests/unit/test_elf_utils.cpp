@@ -4,9 +4,8 @@
 #include <fstream>
 #include <cstdlib>
 
-#include "../include/elf_utils.hpp"
-#include "../include/memory_utils.hpp"
-#include <gtest/gtest.h>
+#include "elf_utils.hpp"
+#include "memory_utils.hpp"
 
 using namespace std;
 
@@ -72,23 +71,3 @@ TEST(ELFUtils, FindsFunctionSymbol) {
     EXPECT_GT(size, 0);
 }
 
-// ---------------------------------------------------------------------------
-// Optional: Test getAbsolutePath()
-// ---------------------------------------------------------------------------
-
-TEST(ELFUtils, AbsolutePathResolution) {
-    string rel = "./";
-    string abs = getAbsolutePath(rel);
-    EXPECT_FALSE(abs.empty());
-    EXPECT_EQ(abs.front(), '/');  // Must start with root
-}
-
-// ---------------------------------------------------------------------------
-// Optional: Test getBaseAddress() on /proc/self/maps
-// ---------------------------------------------------------------------------
-
-TEST(ELFUtils, GetBaseAddressOfSelf) {
-    string exePath = getAbsolutePath("/proc/self/exe");
-    uintptr_t base = getBaseAddress(getpid(), exePath);
-    EXPECT_GT(base, 0);
-}

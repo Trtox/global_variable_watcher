@@ -22,6 +22,12 @@ public:
              size_t varSize,
              char** execArgs);
 
+
+    [[nodiscard]] std::string getProgramPath() const { return programPath; }
+    [[nodiscard]] std::string getVarName() const { return varName; }
+    [[nodiscard]] uintptr_t getSymbolOffset() const { return symbolOffset; }
+    [[nodiscard]] size_t getVarSize() const { return varSize; }
+
     // Forks, execs, and starts watching the variable in the child process.
     void run() const;
 

@@ -1,4 +1,4 @@
-#include "../include/elf_utils.hpp"
+#include "elf_utils.hpp"
 
 #include <elf.h>
 #include <fcntl.h>

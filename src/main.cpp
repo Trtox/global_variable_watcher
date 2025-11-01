@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
 
-#include "../include/args.hpp"     
-#include "../include/elf_utils.hpp"   
-#include "../include/debugger.hpp"    
+#include "args.hpp"
+#include "elf_utils.hpp"
+#include "debugger.hpp"
 
 int main(int argc, char** argv) {
     Arguments args;

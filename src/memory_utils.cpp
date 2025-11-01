@@ -1,4 +1,4 @@
-#include "../include/memory_utils.hpp"
+#include "memory_utils.hpp"
 
 #include <sys/ptrace.h>
 #include <cerrno>
@@ -33,7 +33,7 @@ uintptr_t getBaseAddress(pid_t pid, const std::string& programPath) {
 
 uint64_t readProcessMemory(const pid_t& pid, const uintptr_t& addr, const size_t& size) {
     errno = 0;
-    unsigned long data = ptrace(PTRACE_PEEKDATA, pid, (void*)addr, nullptr);
+    unsigned long data = ptrace(PTRACE_PEEKDATA, pid, reinterpret_cast<void*>(addr), nullptr);
 
     if (data == static_cast<unsigned long>(-1) && errno != 0) {
         throw std::runtime_error(std::string("Failed to read memory: ") + std::strerror(errno));

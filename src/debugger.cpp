@@ -1,6 +1,5 @@
-// src/debugger.cpp
-#include "../include/debugger.hpp"
-#include "../include/memory_utils.hpp"
+#include "debugger.hpp"
+#include "memory_utils.hpp"
 
 #include <sys/ptrace.h>
 #include <sys/wait.h>
@@ -14,14 +13,14 @@
 #include <iostream>
 #include <stdexcept>
 
-static void ptraceChecked(int request, pid_t pid, void* addr, void* data, const char* errMsg) {
+static void ptraceChecked(int request, const pid_t& pid, void* addr, void* data, const char* errMsg) {
     errno = 0;
     if (ptrace(static_cast<__ptrace_request>(request), pid, addr, data) == -1 && errno != 0) {
         throw std::runtime_error(std::string(errMsg) + ": " + std::strerror(errno));
     }
 }
 
-static long dr_len_code(size_t size) {
+static long dr_len_code(const size_t& size) {
     switch (size) {
         case 1: return 0b00;
         case 2: return 0b01;
