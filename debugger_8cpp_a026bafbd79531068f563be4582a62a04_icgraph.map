@@ -1,0 +1,16 @@
+<map id="ptraceChecked" name="ptraceChecked">
+<area shape="rect" id="Node000001" title=" " alt="" coords="856,81,983,107"/>
+<area shape="rect" id="Node000002" href="$debugger_8cpp.html#a508830d991569eaf3d8f36366ad68092" title=" " alt="" coords="597,5,748,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="876,78,807,53,735,33,736,28,809,47,878,73"/>
+<area shape="rect" id="Node000003" href="$classDebugger.html#a944ac1668f45b26a0da57b57ec159e78" title="Main loop that applies the hardware watchpoint and logs variable accesses." alt="" coords="283,81,489,107"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="842,97,489,97,489,91,842,91"/>
+<area shape="rect" id="Node000004" href="$classDebugger.html#a0fb68979aeda450247b147fc2d3cce33" title="Forks and execs the target process, sets the hardware watchpoint, and monitors the variable in the ch..." alt="" coords="108,132,235,157"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="886,116,850,134,809,147,729,161,648,170,487,174,344,167,235,156,235,151,344,162,487,169,648,164,729,156,807,142,848,129,884,111"/>
+<area shape="rect" id="Node000006" href="$classDebugger.html#ac7d0423cddbb4b630749e6b13c4c1ed5" title="Installs a hardware watchpoint using debug registers DR0–DR7." alt="" coords="537,107,808,132"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="842,105,797,109,796,104,842,99"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="602,36,538,53,429,84,428,79,537,47,601,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="319,113,226,135,225,129,317,107"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,132,60,157"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="95,147,60,147,60,142,95,142"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="523,109,489,106,490,100,524,104"/>
+</map>

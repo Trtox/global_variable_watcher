@@ -1,0 +1,7 @@
+<map id="Debugger::setHardwareWatchpoint" name="Debugger::setHardwareWatchpoint">
+<area shape="rect" id="Node000001" title="Installs a hardware watchpoint using debug registers DR0–DR7." alt="" coords="5,31,276,56"/>
+<area shape="rect" id="Node000002" href="$debugger_8cpp.html#a66d4e2440757917d3870682ce5495082" title=" " alt="" coords="332,5,443,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,28,318,22,318,28,265,33"/>
+<area shape="rect" id="Node000003" href="$debugger_8cpp.html#a026bafbd79531068f563be4582a62a04" title=" " alt="" coords="324,55,451,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="271,53,310,57,310,63,271,59"/>
+</map>

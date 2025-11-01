@@ -1,0 +1,30 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,60,105"/>
+<area shape="rect" id="Node000002" href="$elf__utils_8cpp.html#afd95576ed09adab501635135949822bd" title="Finds the address and size of a symbol in a binary(ELF). This function parses the symbol table of the..." alt="" coords="108,5,267,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,78,75,58,107,40,123,33,125,38,109,44,78,63,51,82"/>
+<area shape="rect" id="Node000003" href="$args_8cpp.html#a5730c8fb2a4149f388bbcbb1e9c9888d" title="Parses command&#45;line arguments into a structured format." alt="" coords="120,55,255,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="60,86,106,78,107,83,61,91"/>
+<area shape="rect" id="Node000004" href="$args_8cpp.html#afab1557244eb6ab3cb446f0e7cad8905" title="Prints required usage to user." alt="" coords="136,104,239,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="61,94,123,104,122,109,60,99"/>
+<area shape="rect" id="Node000005" href="$classDebugger.html#a0fb68979aeda450247b147fc2d3cce33" title="Forks and execs the target process, sets the hardware watchpoint, and monitors the variable in the ch..." alt="" coords="124,153,251,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="52,103,109,138,128,146,126,151,107,143,49,108"/>
+<area shape="rect" id="Node000006" href="$memory__utils_8cpp.html#a7fbee27e6758dc2b1c867d3a0f86ef3a" title="Resolves an absolute path for a given file or directory." alt="" coords="347,79,489,104"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="232,151,266,138,289,125,314,113,337,105,339,110,316,118,292,130,268,143,233,156"/>
+<area shape="rect" id="Node000007" href="$memory__utils_8cpp.html#a388c48cfc8c3f488d0a858205907b853" title="Retrieves the base address of a loaded executable in a process." alt="" coords="351,128,485,153"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="251,156,337,147,337,152,251,162"/>
+<area shape="rect" id="Node000008" href="$debugger_8cpp.html#a026bafbd79531068f563be4582a62a04" title=" " alt="" coords="888,255,1015,280"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="251,170,508,198,840,243,876,249,875,255,840,249,508,203,251,175"/>
+<area shape="rect" id="Node000009" href="$classDebugger.html#a944ac1668f45b26a0da57b57ec159e78" title="Main loop that applies the hardware watchpoint and logs variable accesses." alt="" coords="315,280,521,305"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="213,177,383,271,381,276,210,181"/>
+<area shape="poly" id="edge11_Node000009_Node000008" title=" " alt="" coords="480,277,569,265,733,258,875,261,874,266,733,264,570,270,481,283"/>
+<area shape="rect" id="Node000010" href="$debugger_8cpp.html#a508830d991569eaf3d8f36366ad68092" title=" " alt="" coords="629,280,780,305"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="521,290,616,290,616,295,521,295"/>
+<area shape="rect" id="Node000011" href="$memory__utils_8cpp.html#a23d8272a733098323a9e47d6cc07c37d" title="Reads memory from a target process at a specific address." alt="" coords="625,329,784,355"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="493,303,617,324,616,330,492,308"/>
+<area shape="rect" id="Node000012" href="$classDebugger.html#ac7d0423cddbb4b630749e6b13c4c1ed5" title="Installs a hardware watchpoint using debug registers DR0–DR7." alt="" coords="569,379,840,404"/>
+<area shape="poly" id="edge13_Node000009_Node000012" title=" " alt="" coords="442,303,498,334,570,365,600,373,598,378,568,370,496,339,439,308"/>
+<area shape="poly" id="edge10_Node000010_Node000008" title=" " alt="" coords="780,282,874,273,875,278,781,288"/>
+<area shape="poly" id="edge15_Node000012_Node000008" title=" " alt="" coords="810,376,839,365,866,349,890,329,929,289,933,292,894,333,869,353,841,370,812,381"/>
+<area shape="rect" id="Node000013" href="$debugger_8cpp.html#a66d4e2440757917d3870682ce5495082" title=" " alt="" coords="896,379,1007,404"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="840,389,882,389,882,394,840,394"/>
+</map>
