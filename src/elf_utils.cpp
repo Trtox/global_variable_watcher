@@ -11,7 +11,6 @@
 #include <stdexcept>
 
 bool findSymbolAddress(const std::string& path, const std::string& symbol, uintptr_t& address, size_t& size) {
-    // Open ELF file
     const int fd = open(path.c_str(), O_RDONLY);
     if (fd < 0) {
         perror("open");
@@ -25,7 +24,6 @@ bool findSymbolAddress(const std::string& path, const std::string& symbol, uintp
         return false;
     }
 
-    // Map file into memory
     void* const data = mmap(nullptr, st.st_size, PROT_READ, MAP_PRIVATE, fd, 0);
     if (data == MAP_FAILED) {
         perror("mmap");
@@ -38,11 +36,9 @@ bool findSymbolAddress(const std::string& path, const std::string& symbol, uintp
 
     const char* const shstrtab = static_cast<const char*>(data) + shdrs[ehdr->e_shstrndx].sh_offset;
 
-    // Iterate sections
     for (int i = 0; i < ehdr->e_shnum; ++i) {
         const char* const sectionName = shstrtab + shdrs[i].sh_name;
 
-        // We care only about symbol tables
         if (std::strcmp(sectionName, ".symtab") != 0 && std::strcmp(sectionName, ".dynsym") != 0)
             continue;
 
